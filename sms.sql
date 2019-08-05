@@ -38,8 +38,8 @@ CREATE TABLE `staffinfo` (
   `Region` varchar(100) NOT NULL,
   `City` varchar(100) NOT NULL,
   `Subject` varchar(100) NOT NULL,
-  `DOB` date NOT NULL,
-  `DateAdmitted` date NOT NULL,
+  `DOB` varchar(100) NOT NULL,
+  `DateAdmitted` varchar(100) NOT NULL,
   `Hobby` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -54,7 +54,7 @@ CREATE TABLE `studentinfo` (
   `FirstName` varchar(100) NOT NULL,
   `OtherNames` varchar(255) DEFAULT NULL,
   `Lastname` varchar(100) NOT NULL,
-  `DOB` date NOT NULL,
+  `DOB` varchar(100) NOT NULL,
   `Gender` varchar(10) NOT NULL,
   `City` varchar(30) DEFAULT NULL,
   `Class` varchar(20) NOT NULL,
