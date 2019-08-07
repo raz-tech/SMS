@@ -25,15 +25,15 @@ Public Class Staffinfor
         End Try
     End Sub
 
-    Private Sub Staffinfor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim rn As Integer
-        Dim ipper As Integer = 999
-    '    Dim faculty As String = InputBox("Enter the Staff Short Code:")
-     '   Dim year As Integer = InputBox("Enter the last two digit of the Admitted year:")
-        Randomize()
+    'Private Sub Staffinfor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    Dim rn As Integer
+    '    Dim ipper As Integer = 999
+    ''    Dim faculty As String = InputBox("Enter the Staff Short Code:")
+    ' '   Dim year As Integer = InputBox("Enter the last two digit of the Admitted year:")
+    '    Randomize()
 
-        rn = Rnd() * ipper
-      '  TextBox1.Text = faculty & "/" & rn & "/" & year
-        textbox.text=rn
-    End Sub
+    '    rn = Rnd() * ipper
+    '  '  TextBox1.Text = faculty & "/" & rn & "/" & year
+    '    'textbox.text=rn
+    'End Sub
 End Class
