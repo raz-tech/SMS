@@ -25,8 +25,6 @@ Partial Class addStudentRecord
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -77,8 +75,6 @@ Partial Class addStudentRecord
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel2.Controls.Add(Me.TextBox8)
-        Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.TextBox7)
         Me.Panel2.Controls.Add(Me.TextBox6)
         Me.Panel2.Controls.Add(Me.TextBox5)
@@ -105,24 +101,6 @@ Partial Class addStudentRecord
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(456, 528)
         Me.Panel2.TabIndex = 0
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(216, 11)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(216, 22)
-        Me.TextBox8.TabIndex = 9
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(3, 13)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(109, 20)
-        Me.Label12.TabIndex = 8
-        Me.Label12.Text = "STUDENT ID"
         '
         'TextBox7
         '
@@ -362,7 +340,5 @@ Partial Class addStudentRecord
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents Label12 As System.Windows.Forms.Label
 
 End Class
