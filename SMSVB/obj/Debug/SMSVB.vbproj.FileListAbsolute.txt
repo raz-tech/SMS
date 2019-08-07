@@ -9,3 +9,14 @@ C:\Users\Abdurrahim\Desktop\SMS\SMS\SMSVB\obj\Debug\SMSVB.vbproj.GenerateResourc
 C:\Users\Abdurrahim\Desktop\SMS\SMS\SMSVB\obj\Debug\SMSVB.exe
 C:\Users\Abdurrahim\Desktop\SMS\SMS\SMSVB\obj\Debug\SMSVB.xml
 C:\Users\Abdurrahim\Desktop\SMS\SMS\SMSVB\obj\Debug\SMSVB.pdb
+D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.exe.config
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.exe
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.xml
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.pdb
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.addStudentRecord.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.Resources.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.Staffinfor.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.vbproj.GenerateResource.Cache
+D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.exe
+D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.pdb
+D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.xml
