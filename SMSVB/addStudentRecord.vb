@@ -29,11 +29,12 @@ Public Class addStudentRecord
     Private Sub addStudentRecord_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim rn As Integer
         Dim ipper As Integer = 2009
-        Dim faculty As String = InputBox("Enter the School Short Code:")
-        Dim year As Integer = InputBox("Enter the last two digit of the Admitted year:")
+   '     Dim faculty As String = InputBox("Enter the School Short Code:")
+    '    Dim year As Integer = InputBox("Enter the last two digit of the Admitted year:")
         Randomize()
 
         rn = Rnd() * ipper
-        TextBox1.Text = faculty & "/" & rn & "/" & year
+   '     TextBox1.Text = faculty & "/" & rn & "/" & year
+        textbox1.text=rn
     End Sub
 End Class
