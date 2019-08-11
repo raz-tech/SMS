@@ -11,7 +11,7 @@ Public Class addStudentRecord
             MYCONN.Open()
             Dim Query As String
             Query =
-"insert into SMS.studentinfo (id,FirstName,LastName,DOB,Address,Gender,City,District,Class,ParentFullName,Occupation,ParentNumber) values ('" & TextBox8.Text & "','" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & ComboBox1.Text & "','" & DateTimePicker1.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "')  "
+"insert into SMS.studentinfo (id,FirstName,LastName,DOB,Address,Gender,City,District,Class,ParentFullName,Occupation,ParentNumber) values ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & ComboBox1.Text & "','" & DateTimePicker1.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "')  "
             command = New MySqlCommand(Query, MYCONN)
             reader = command.ExecuteReader
             MessageBox.Show("Form Submited Successfully. Thank you!!!")
