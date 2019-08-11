@@ -82,6 +82,14 @@
       <DependentUpon>addStudentRecord.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="adminHomePage.Designer.vb">
+      <DependentUpon>adminHomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminHomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb" />
+    <Compile Include="home.vb" />
     <Compile Include="login.Designer.vb">
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
@@ -114,6 +122,10 @@
     <EmbeddedResource Include="addStudentRecord.resx">
       <DependentUpon>addStudentRecord.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminHomePage.resx">
+      <DependentUpon>adminHomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx" />
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
     </EmbeddedResource>
