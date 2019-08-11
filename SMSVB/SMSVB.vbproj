@@ -88,6 +88,12 @@
     <Compile Include="adminHomePage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dashbord.Designer.vb">
+      <DependentUpon>dashbord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashbord.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login.Designer.vb">
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminHomePage.resx">
       <DependentUpon>adminHomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashbord.resx">
+      <DependentUpon>dashbord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
