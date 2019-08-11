@@ -22,5 +22,7 @@ D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.pdb
 D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.xml
 D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.login.resources
 D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.adminHomePage.resources
-D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.vbprojResolveAssemblyReference.cache
 D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.dashbord.resources
+D:\works\vb\SMS\SMSVB\bin\Debug\DevOne.Security.Cryptography.BCrypt.dll
+D:\works\vb\SMS\SMSVB\bin\Debug\Microsoft.Web.XmlTransform.dll
+D:\works\vb\SMS\SMSVB\bin\Debug\NuGet.Core.dll

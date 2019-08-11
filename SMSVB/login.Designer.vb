@@ -111,6 +111,7 @@ Partial Class login
         '
         Me.TextBox2.Location = New System.Drawing.Point(265, 440)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(235, 20)
         Me.TextBox2.TabIndex = 16
         '
