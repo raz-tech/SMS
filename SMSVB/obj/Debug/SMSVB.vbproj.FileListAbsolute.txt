@@ -20,3 +20,4 @@ D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.vbproj.GenerateResource.Cache
 D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.exe
 D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.pdb
 D:\works\vb\SMS\SMSVB\bin\Debug\SMSVB.xml
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.login.resources
