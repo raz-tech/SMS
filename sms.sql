@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 05, 2019 at 03:57 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Host: 127.0.0.1:3306
+-- Generation Time: Aug 11, 2019 at 11:36 PM
+-- Server version: 5.7.23
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,76 +25,66 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `staffinfo`
+-- Table structure for table `staffinfor`
 --
 
-CREATE TABLE `staffinfo` (
-  `id` int(11) NOT NULL,
-  `StaffId` varchar(11) NOT NULL,
-  `FirstName` varchar(100) NOT NULL,
-  `OtherName` varchar(100) DEFAULT NULL,
-  `LastName` varchar(100) NOT NULL,
-  `TelNumber` varchar(100) NOT NULL,
-  `Region` varchar(100) NOT NULL,
-  `City` varchar(100) NOT NULL,
-  `Subject` varchar(100) NOT NULL,
-  `DOB` varchar(100) NOT NULL,
-  `DateAdmitted` varchar(100) NOT NULL,
-  `Hobby` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `staffinfor`;
+CREATE TABLE IF NOT EXISTS `staffinfor` (
+  `StaffId` varchar(30) NOT NULL,
+  `StaffPassword` varchar(255) NOT NULL,
+  `FullName` varchar(100) NOT NULL,
+  `Gender` varchar(15) DEFAULT NULL,
+  `TelNumber` varchar(100) DEFAULT NULL,
+  `Region` varchar(100) DEFAULT NULL,
+  `City` varchar(100) DEFAULT NULL,
+  `SubjectTeaching` varchar(100) NOT NULL,
+  `DOB` varchar(16) DEFAULT NULL,
+  `DateAdmitted` varchar(15) DEFAULT NULL,
+  `Hobby` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`StaffId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `staffinfor`
+--
+
+INSERT INTO `staffinfor` (`StaffId`, `StaffPassword`, `FullName`, `Gender`, `TelNumber`, `Region`, `City`, `SubjectTeaching`, `DOB`, `DateAdmitted`, `Hobby`) VALUES
+('FMS/825/16', '1122', 'ZAKARIA RAHIM', 'MALE', '0549041452', 'NORTHERN', 'TAMALE', 'MATHS', '8/4/2019', '8/4/2019', 'FOOTBALL'),
+('Rash11', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 'Zakaria Rashida', 'FEMALE', '0544802923', 'NORTHERN', 'Tamale', 'Biochemistry', '8/11/2019', '8/11/2019', 'Reading');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `studentinfo`
+-- Table structure for table `studentinfor`
 --
 
-CREATE TABLE `studentinfo` (
-  `id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `studentinfor`;
+CREATE TABLE IF NOT EXISTS `studentinfor` (
   `FirstName` varchar(100) NOT NULL,
-  `OtherNames` varchar(255) DEFAULT NULL,
   `Lastname` varchar(100) NOT NULL,
   `DOB` varchar(100) NOT NULL,
-  `Gender` varchar(10) NOT NULL,
+  `Address` varchar(50) NOT NULL,
+  `Gender` varchar(10) DEFAULT NULL,
   `City` varchar(30) DEFAULT NULL,
-  `Class` varchar(20) NOT NULL,
-  `ParentFirstName` varchar(200) NOT NULL,
-  `ParentLastName` varchar(255) NOT NULL,
-  `ParentPhone` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `District` varchar(100) DEFAULT NULL,
+  `Class` varchar(20) DEFAULT NULL,
+  `ParentFullName` varchar(200) DEFAULT NULL,
+  `Occupation` varchar(100) DEFAULT NULL,
+  `ParentNumber` int(15) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
 
 --
--- Indexes for dumped tables
+-- Table structure for table `users`
 --
 
---
--- Indexes for table `staffinfo`
---
-ALTER TABLE `staffinfo`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `StaffId` (`StaffId`);
-
---
--- Indexes for table `studentinfo`
---
-ALTER TABLE `studentinfo`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `staffinfo`
---
-ALTER TABLE `staffinfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `studentinfo`
---
-ALTER TABLE `studentinfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `UserId` varchar(20) DEFAULT NULL,
+  `UserType` varchar(100) DEFAULT NULL,
+  `Password` varchar(100) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -88,7 +88,7 @@ Partial Class Staffinfor
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker2.Location = New System.Drawing.Point(212, 503)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(238, 20)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(227, 20)
         Me.DateTimePicker2.TabIndex = 24
         '
         'DateTimePicker1
@@ -96,28 +96,28 @@ Partial Class Staffinfor
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(212, 471)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(238, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(227, 20)
         Me.DateTimePicker1.TabIndex = 23
         '
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(212, 539)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(227, 20)
         Me.TextBox9.TabIndex = 22
         '
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(212, 434)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(227, 20)
         Me.TextBox6.TabIndex = 19
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(212, 402)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(227, 20)
         Me.TextBox5.TabIndex = 18
         '
         'ComboBox2
@@ -126,14 +126,14 @@ Partial Class Staffinfor
         Me.ComboBox2.Items.AddRange(New Object() {"GREATER ACCRA", "CENTRAL", "EASTERN", "WESTERN", "VOLTA", "ASHANSI", "BRONG AHAFO", "NORTHERN", "UPPER EAST", "UPPER WEST"})
         Me.ComboBox2.Location = New System.Drawing.Point(212, 362)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(238, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(227, 21)
         Me.ComboBox2.TabIndex = 17
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(212, 325)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(227, 20)
         Me.TextBox4.TabIndex = 16
         '
         'ComboBox1
@@ -142,28 +142,30 @@ Partial Class Staffinfor
         Me.ComboBox1.Items.AddRange(New Object() {"MALE", "FEMALE"})
         Me.ComboBox1.Location = New System.Drawing.Point(212, 286)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(238, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(227, 21)
         Me.ComboBox1.TabIndex = 15
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(212, 247)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(227, 20)
         Me.TextBox3.TabIndex = 14
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(212, 207)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox2.Size = New System.Drawing.Size(227, 21)
         Me.TextBox2.TabIndex = 13
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(212, 163)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(238, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(227, 20)
         Me.TextBox1.TabIndex = 12
         '
         'Label11
