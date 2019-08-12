@@ -4,32 +4,35 @@ Public Class Staffinfor
     Dim COMMAND1 As MySqlCommand
     Dim COMMAND2 As MySqlCommand
     Dim hash = New hashFunction
-
+    Dim reader1 As MySqlDataReader
+    Dim reader2 As MySqlDataReader
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MYCONN = New MySqlConnection
 
         MYCONN.ConnectionString = "server=localhost; userid=root; password=; database=SMS"
-        Dim reader1 As MySqlDataReader
-        'Dim reader2 As MySqlDataReader
+
+
         Try
             MYCONN.Open()
             Dim Query1 As String
-            Dim Query2 As String
-            Dim pass = hash.fromstring(1234)
-            Dim usertype = "admin"
+           
             Query1 =
 "insert into SMS.staffinfor (StaffId,FullName,Gender,TelNumber,Region,City,SubjectTeaching,DOB,DateAdmitted,Hobby) values ('" & TextBox1.Text & "','" & TextBox3.Text & "','" & ComboBox1.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & DateTimePicker1.Text & "','" & DateTimePicker2.Text & "','" & TextBox9.Text & "')  "
-            Query2 = "insert into SMS.users (UserId,UserType,Password) values ('" & TextBox1.Text & "','" & usertype & "','" & pass & "')  "
             COMMAND1 = New MySqlCommand(Query1, MYCONN)
-            COMMAND2 = New MySqlCommand(Query2, MYCONN)
+
             reader1 = COMMAND1.ExecuteReader
-            reader1.Close()
-            reader1 = COMMAND2.ExecuteReader
-            'reader2 = COMMAND2.ExecuteReader
-            MessageBox.Show("Data Submited Successfully. Thank you!!!")
 
             MYCONN.Close()
+
+            MYCONN.Open()
+            Dim Query2 As String
+            Dim pass = hash.fromstring(1234)
+            Dim usertype = "teacher"
+            Query2 = "insert into SMS.users (UserId,UserType,Password) values ('" & TextBox1.Text & "','" & usertype & "','" & pass & "')  "
+            COMMAND2 = New MySqlCommand(Query2, MYCONN)
+            reader2 = COMMAND2.ExecuteReader
+            MessageBox.Show("Data Submited Successfully. Thank you!!!")
         Catch ex As MySqlException
             MessageBox.Show(ex.Message)
         Finally

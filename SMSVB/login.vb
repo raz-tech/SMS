@@ -25,14 +25,14 @@ Public Class login
             mysqlconn.Open()
             Dim query As String
             query = "select * FROM SMS.Users where Userid='" & TextBox1.Text & "' and password='" & hash.fromstring(TextBox2.Text) & "'"
-            'query = "select UserType FROM SMS.Users"
+
 
 
             command = New MySqlCommand(query, mysqlconn)
             Reader = command.ExecuteReader()
 
 
-            '' Dim ID, ADMIN_ID, TL_ID As String
+
             Dim count As Integer
             count = 0
             While Reader.Read()
