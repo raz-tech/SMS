@@ -44,3 +44,4 @@ C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.login.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.Resources.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.Staffinfor.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.vbproj.GenerateResource.Cache
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.vbprojResolveAssemblyReference.cache

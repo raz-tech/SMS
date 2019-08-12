@@ -32,7 +32,6 @@ Partial Class Staffinfor
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -43,7 +42,6 @@ Partial Class Staffinfor
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -64,7 +62,6 @@ Partial Class Staffinfor
         Me.Panel1.Controls.Add(Me.TextBox4)
         Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label10)
@@ -75,7 +72,6 @@ Partial Class Staffinfor
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(30, 0)
@@ -152,18 +148,9 @@ Partial Class Staffinfor
         Me.TextBox3.Size = New System.Drawing.Size(227, 20)
         Me.TextBox3.TabIndex = 14
         '
-        'TextBox2
-        '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(212, 207)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(227, 21)
-        Me.TextBox2.TabIndex = 13
-        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(212, 163)
+        Me.TextBox1.Location = New System.Drawing.Point(212, 196)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(227, 20)
         Me.TextBox1.TabIndex = 12
@@ -267,23 +254,12 @@ Partial Class Staffinfor
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "FULL NAME"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(33, 207)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 18)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "PASSWORD"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 161)
+        Me.Label1.Location = New System.Drawing.Point(33, 194)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 18)
         Me.Label1.TabIndex = 1
@@ -350,7 +326,6 @@ Partial Class Staffinfor
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
@@ -360,7 +335,6 @@ Partial Class Staffinfor
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
