@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 13, 2019 at 01:51 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Host: 127.0.0.1:3306
+-- Generation Time: Aug 14, 2019 at 10:50 PM
+-- Server version: 5.7.23
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,7 +28,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `staffinfor`
 --
 
-CREATE TABLE `staffinfor` (
+DROP TABLE IF EXISTS `staffinfor`;
+CREATE TABLE IF NOT EXISTS `staffinfor` (
   `StaffId` varchar(30) NOT NULL,
   `FullName` varchar(100) NOT NULL,
   `Gender` varchar(15) DEFAULT NULL,
@@ -38,7 +39,8 @@ CREATE TABLE `staffinfor` (
   `SubjectTeaching` varchar(100) NOT NULL,
   `DOB` varchar(16) DEFAULT NULL,
   `DateAdmitted` varchar(15) DEFAULT NULL,
-  `Hobby` varchar(100) DEFAULT NULL
+  `Hobby` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`StaffId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -46,7 +48,8 @@ CREATE TABLE `staffinfor` (
 --
 
 INSERT INTO `staffinfor` (`StaffId`, `FullName`, `Gender`, `TelNumber`, `Region`, `City`, `SubjectTeaching`, `DOB`, `DateAdmitted`, `Hobby`) VALUES
-('mudi1234', 'Mudi Sheikh', 'female', '289643678', 'NORTHERN', 'Joli', 'French', '8/12/2019', '8/12/2019', 'eating');
+('mudi1234', 'Mudi Sheikh', 'female', '289643678', 'NORTHERN', 'Joli', 'French', '8/12/2019', '8/12/2019', 'eating'),
+('Rash2211', 'Zakaria Rashida', 'FEMALE', '05533432', 'NORTHERN', 'Tamale', 'Biochem', '8/12/2019', '8/12/2019', 'Reading');
 
 -- --------------------------------------------------------
 
@@ -54,7 +57,8 @@ INSERT INTO `staffinfor` (`StaffId`, `FullName`, `Gender`, `TelNumber`, `Region`
 -- Table structure for table `studentinfor`
 --
 
-CREATE TABLE `studentinfor` (
+DROP TABLE IF EXISTS `studentinfor`;
+CREATE TABLE IF NOT EXISTS `studentinfor` (
   `FirstName` varchar(100) NOT NULL,
   `Lastname` varchar(100) NOT NULL,
   `DOB` varchar(100) NOT NULL,
@@ -63,10 +67,19 @@ CREATE TABLE `studentinfor` (
   `City` varchar(30) DEFAULT NULL,
   `District` varchar(100) DEFAULT NULL,
   `Class` varchar(20) DEFAULT NULL,
-  `ParentFullName` varchar(200) DEFAULT NULL,
-  `Occupation` varchar(100) DEFAULT NULL,
-  `ParentNumber` int(15) DEFAULT NULL
+  `ParentContact` varchar(200) DEFAULT NULL,
+  `ParentFullName` varchar(100) DEFAULT NULL,
+  `Occupation` varchar(150) DEFAULT NULL,
+  `MOMONumber` varchar(16) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `studentinfor`
+--
+
+INSERT INTO `studentinfor` (`FirstName`, `Lastname`, `DOB`, `Address`, `Gender`, `City`, `District`, `Class`, `ParentContact`, `ParentFullName`, `Occupation`, `MOMONumber`) VALUES
+('Zak', 'Kamal', '8/13/2019', '', 'FEMALE', 'Tamale', 'Tamale Sourth', 'Three', '054930932', 'Zakaria Kamal', '', ''),
+('Fataw', 'jalil', '8/13/2019', 'lah 44', 'male', 'tam', 'gum', 'TWO', '0549041452', 'jalil fat', 'teacher', '0549041452');
 
 -- --------------------------------------------------------
 
@@ -74,7 +87,8 @@ CREATE TABLE `studentinfor` (
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
   `UserId` varchar(20) DEFAULT NULL,
   `UserType` varchar(100) DEFAULT NULL,
   `Password` varchar(100) DEFAULT NULL
@@ -85,17 +99,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UserId`, `UserType`, `Password`) VALUES
-('mudi1234', 'admin', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `staffinfor`
---
-ALTER TABLE `staffinfor`
-  ADD PRIMARY KEY (`StaffId`);
+('mudi1234', 'admin', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4'),
+('Rash2211', 'teacher', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
