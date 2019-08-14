@@ -61,7 +61,6 @@ Public Class login
             mysqlconn.Dispose()
         End Try
 
-        End Try
     End Sub
 
 End Class

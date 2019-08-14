@@ -44,4 +44,9 @@ Public Class Staffinfor
 
 
     End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        MagStuRecord.Show()
+        Me.Hide()
+    End Sub
 End Class
