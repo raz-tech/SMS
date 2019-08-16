@@ -16,8 +16,9 @@
         Dim result = MsgBox("Are you sure you want logout?", MsgBoxStyle.YesNo, Title:="Logout")
 
         If result = 6 Then
-            Me.Close()
+
             login.Show()
+            Me.Hide()
         ElseIf result = 7 Then
             Me.Show()
 

@@ -11,7 +11,7 @@
     <AssemblyName>SMSVB</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -113,6 +113,12 @@
     <Compile Include="adminHomePage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DeleteStudent.Designer.vb">
+      <DependentUpon>DeleteStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="hashFunction.vb" />
     <Compile Include="dashbord.Designer.vb">
       <DependentUpon>dashbord.vb</DependentUpon>
@@ -124,6 +130,12 @@
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
     <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MagStuRecord.Designer.vb">
+      <DependentUpon>MagStuRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MagStuRecord.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -147,6 +159,12 @@
     <Compile Include="Staffinfor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateStudntRecord.Designer.vb">
+      <DependentUpon>UpdateStudntRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudntRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="addStudentRecord.resx">
@@ -158,8 +176,14 @@
     <EmbeddedResource Include="dashbord.resx">
       <DependentUpon>dashbord.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MagStuRecord.resx">
+      <DependentUpon>MagStuRecord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -169,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staffinfor.resx">
       <DependentUpon>Staffinfor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudntRecord.resx">
+      <DependentUpon>UpdateStudntRecord.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
