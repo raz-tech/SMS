@@ -12,7 +12,7 @@ Public Class DeleteStudent
             myconn.Open()
             Dim Query As String
             Query =
-"delete from  SMS.Studentinfor where FirstName='" & TextBox1.Text & "'"
+"delete from  SMS.Studentinfor where StudentId='" & TextBox1.Text & "'"
             Command = New MySqlCommand(Query, myconn)
             reader = Command.ExecuteReader
             MessageBox.Show(" STUDENT DATA DELETED SUCCESSFULLY")

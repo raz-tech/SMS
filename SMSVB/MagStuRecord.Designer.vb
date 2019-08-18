@@ -57,10 +57,13 @@ Partial Class MagStuRecord
         'DataGridView1
         '
         Me.DataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 24)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 27)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1343, 759)
+        Me.DataGridView1.Size = New System.Drawing.Size(734, 548)
         Me.DataGridView1.TabIndex = 0
         '
         'MenuStrip1
@@ -151,7 +154,7 @@ Partial Class MagStuRecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 744)
+        Me.ClientSize = New System.Drawing.Size(759, 577)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "MagStuRecord"
         Me.Text = "STUDENT MANAGEMENT PORTAL"
