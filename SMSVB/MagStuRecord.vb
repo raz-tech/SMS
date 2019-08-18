@@ -102,7 +102,7 @@ Public Class MagStuRecord
 
         Dim Command As New MySqlCommand("SELECT * FROM `studentinfor` WHERE ParentContact='" & StudentName & "' ", myconn)
         Command.Parameters.Add("@studentname", MySqlDbType.Int64).Value = StudentName
-        Dim reader As MySqlDataReader
+        'Dim reader As MySqlDataReader
 
         Dim SDA As New MySqlDataAdapter
         Dim DBDATASET As New DataTable

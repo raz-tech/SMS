@@ -48,3 +48,7 @@ D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.vbprojResolveAssemblyReference.cache
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.MagStuRecord.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.UpdateStudntRecord.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.DeleteStudent.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.DeleteStudent.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.MagStuRecord.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.UpdateStudntRecord.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.teacherHomePage.resources

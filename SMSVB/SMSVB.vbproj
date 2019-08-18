@@ -11,7 +11,7 @@
     <AssemblyName>SMSVB</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -113,6 +113,7 @@
     <Compile Include="adminHomePage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="DeleteStudent.Designer.vb">
       <DependentUpon>DeleteStudent.vb</DependentUpon>
     </Compile>
@@ -159,6 +160,12 @@
     <Compile Include="Staffinfor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="teacherHomePage.Designer.vb">
+      <DependentUpon>teacherHomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teacherHomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UpdateStudntRecord.Designer.vb">
       <DependentUpon>UpdateStudntRecord.vb</DependentUpon>
     </Compile>
@@ -193,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staffinfor.resx">
       <DependentUpon>Staffinfor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherHomePage.resx">
+      <DependentUpon>teacherHomePage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateStudntRecord.resx">
       <DependentUpon>UpdateStudntRecord.vb</DependentUpon>

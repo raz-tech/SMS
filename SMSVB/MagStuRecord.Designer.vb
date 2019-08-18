@@ -151,7 +151,7 @@ Partial Class MagStuRecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 744)
+        Me.ClientSize = New System.Drawing.Size(1354, 733)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "MagStuRecord"
         Me.Text = "STUDENT MANAGEMENT PORTAL"
