@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 14, 2019 at 10:50 PM
+-- Generation Time: Aug 21, 2019 at 10:06 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -59,6 +59,7 @@ INSERT INTO `staffinfor` (`StaffId`, `FullName`, `Gender`, `TelNumber`, `Region`
 
 DROP TABLE IF EXISTS `studentinfor`;
 CREATE TABLE IF NOT EXISTS `studentinfor` (
+  `StudentId` varchar(150) NOT NULL,
   `FirstName` varchar(100) NOT NULL,
   `Lastname` varchar(100) NOT NULL,
   `DOB` varchar(100) NOT NULL,
@@ -70,16 +71,16 @@ CREATE TABLE IF NOT EXISTS `studentinfor` (
   `ParentContact` varchar(200) DEFAULT NULL,
   `ParentFullName` varchar(100) DEFAULT NULL,
   `Occupation` varchar(150) DEFAULT NULL,
-  `MOMONumber` varchar(16) DEFAULT NULL
+  `MOMONumber` varchar(16) DEFAULT NULL,
+  PRIMARY KEY (`StudentId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `studentinfor`
 --
 
-INSERT INTO `studentinfor` (`FirstName`, `Lastname`, `DOB`, `Address`, `Gender`, `City`, `District`, `Class`, `ParentContact`, `ParentFullName`, `Occupation`, `MOMONumber`) VALUES
-('Zak', 'Kamal', '8/13/2019', '', 'FEMALE', 'Tamale', 'Tamale Sourth', 'Three', '054930932', 'Zakaria Kamal', '', ''),
-('Fataw', 'jalil', '8/13/2019', 'lah 44', 'male', 'tam', 'gum', 'TWO', '0549041452', 'jalil fat', 'teacher', '0549041452');
+INSERT INTO `studentinfor` (`StudentId`, `FirstName`, `Lastname`, `DOB`, `Address`, `Gender`, `City`, `District`, `Class`, `ParentContact`, `ParentFullName`, `Occupation`, `MOMONumber`) VALUES
+('1631', 'zak', 'kalil', '8/16/2019', 'kak 489', 'Female', 'Tamale', 'Tamale South', 'THREE', '0549041452', 'zak fadil', 'Teacher', '0549029333');
 
 -- --------------------------------------------------------
 
