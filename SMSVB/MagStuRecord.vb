@@ -73,7 +73,7 @@ Public Class MagStuRecord
     End Sub
 
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-       e.Graphics.DrawImage(bitmap, 0, 0)
+        e.Graphics.DrawImage(bitmap, 0, 0)
         Dim printview As RectangleF = e.PageSettings.PrintableArea
         If Me.ListView1.Height - printview.Height > 0 Then
             e.HasMorePages = True
@@ -108,7 +108,7 @@ Public Class MagStuRecord
 
         Dim Command As New MySqlCommand("SELECT * FROM `studentinfor` WHERE ParentContact='" & StudentName & "' ", myconn)
         Command.Parameters.Add("@studentname", MySqlDbType.Int64).Value = StudentName
-        'Dim reader As MySqlDataReader
+        Dim reader As MySqlDataReader
 
         Try
             myconn.Open()
