@@ -1,11 +1,18 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
+<<<<<<< HEAD
 -- Host: 127.0.0.1:3306
 -- Generation Time: Aug 21, 2019 at 10:06 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
+=======
+-- Host: 127.0.0.1
+-- Generation Time: Aug 21, 2019 at 11:36 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
+>>>>>>> f957821ee0de440b21eb646e1589f0b3a9b5a316
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,11 +32,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `examresult`
+--
+
+CREATE TABLE `examresult` (
+  `id` int(11) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
+  `academicYear` varchar(255) NOT NULL,
+  `term` varchar(255) NOT NULL,
+  `endTerm` varchar(255) NOT NULL,
+  `midTerm` varchar(255) NOT NULL,
+  `totalMark` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `examresult`
+--
+
+INSERT INTO `examresult` (`id`, `firstName`, `lastName`, `academicYear`, `term`, `endTerm`, `midTerm`, `totalMark`) VALUES
+(1, '', '', '', '', '', '', ''),
+(2, 'mudi', 'mudi', '2012/13', 'ONE ', '75', '25', '7525'),
+(3, '', '', '', '', '50', '25', '5025'),
+(4, '', '', '', '', '2', '12', '122'),
+(5, '', '', '', '', '22', '12', '34');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `staffinfor`
 --
 
-DROP TABLE IF EXISTS `staffinfor`;
-CREATE TABLE IF NOT EXISTS `staffinfor` (
+CREATE TABLE `staffinfor` (
   `StaffId` varchar(30) NOT NULL,
   `FullName` varchar(100) NOT NULL,
   `Gender` varchar(15) DEFAULT NULL,
@@ -39,8 +73,7 @@ CREATE TABLE IF NOT EXISTS `staffinfor` (
   `SubjectTeaching` varchar(100) NOT NULL,
   `DOB` varchar(16) DEFAULT NULL,
   `DateAdmitted` varchar(15) DEFAULT NULL,
-  `Hobby` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`StaffId`)
+  `Hobby` varchar(100) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -57,9 +90,13 @@ INSERT INTO `staffinfor` (`StaffId`, `FullName`, `Gender`, `TelNumber`, `Region`
 -- Table structure for table `studentinfor`
 --
 
+<<<<<<< HEAD
 DROP TABLE IF EXISTS `studentinfor`;
 CREATE TABLE IF NOT EXISTS `studentinfor` (
   `StudentId` varchar(150) NOT NULL,
+=======
+CREATE TABLE `studentinfor` (
+>>>>>>> f957821ee0de440b21eb646e1589f0b3a9b5a316
   `FirstName` varchar(100) NOT NULL,
   `Lastname` varchar(100) NOT NULL,
   `DOB` varchar(100) NOT NULL,
@@ -88,8 +125,7 @@ INSERT INTO `studentinfor` (`StudentId`, `FirstName`, `Lastname`, `DOB`, `Addres
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE `users` (
   `UserId` varchar(20) DEFAULT NULL,
   `UserType` varchar(100) DEFAULT NULL,
   `Password` varchar(100) DEFAULT NULL
@@ -102,6 +138,32 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`UserId`, `UserType`, `Password`) VALUES
 ('mudi1234', 'admin', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4'),
 ('Rash2211', 'teacher', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `examresult`
+--
+ALTER TABLE `examresult`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `staffinfor`
+--
+ALTER TABLE `staffinfor`
+  ADD PRIMARY KEY (`StaffId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `examresult`
+--
+ALTER TABLE `examresult`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

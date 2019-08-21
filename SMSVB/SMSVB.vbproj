@@ -11,7 +11,7 @@
     <AssemblyName>SMSVB</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -80,6 +80,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -100,6 +102,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addResult.Designer.vb">
+      <DependentUpon>addResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="addStudentRecord.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +167,24 @@
     <Compile Include="Staffinfor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="teacherDashboard.Designer.vb">
+      <DependentUpon>teacherDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teacherDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherHomePage.Designer.vb">
+      <DependentUpon>teacherHomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teacherHomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherProfile.Designer.vb">
+      <DependentUpon>teacherProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teacherProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UpdateStudntRecord.Designer.vb">
       <DependentUpon>UpdateStudntRecord.vb</DependentUpon>
     </Compile>
@@ -167,6 +193,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="addResult.resx">
+      <DependentUpon>addResult.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addStudentRecord.resx">
       <DependentUpon>addStudentRecord.vb</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +222,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staffinfor.resx">
       <DependentUpon>Staffinfor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherDashboard.resx">
+      <DependentUpon>teacherDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherHomePage.resx">
+      <DependentUpon>teacherHomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherProfile.resx">
+      <DependentUpon>teacherProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateStudntRecord.resx">
       <DependentUpon>UpdateStudntRecord.vb</DependentUpon>

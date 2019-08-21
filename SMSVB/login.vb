@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Web
 
 
 Public Class login
@@ -12,6 +13,7 @@ Public Class login
 
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        System.Web.HttpContent.current.session("userid") = TextBox1.Text
         Dim mysqlconn As MySqlConnection
         Dim command As MySqlCommand
 
@@ -41,7 +43,8 @@ Public Class login
             If count = 1 Then
                 Dim usertype = Reader("UserType")
                 If usertype = "teacher" Then
-                    MessageBox.Show("No teacher homepage yet")
+                    Me.Hide()
+                    teacherDashboard.Show()
 
                 Else
                     Me.Hide()

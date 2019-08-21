@@ -48,3 +48,14 @@ D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.vbprojResolveAssemblyReference.cache
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.MagStuRecord.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.UpdateStudntRecord.resources
 C:\Users\Abdurrahim\Desktop\SMS\SMSVB\obj\Debug\SMSVB.DeleteStudent.resources
+C:\Users\User\Desktop\sm\SMS\SMSVB\bin\Debug\SMSVB.exe.config
+C:\Users\User\Desktop\sm\SMS\SMSVB\obj\Debug\SMSVB.exe
+C:\Users\User\Desktop\sm\SMS\SMSVB\obj\Debug\SMSVB.xml
+C:\Users\User\Desktop\sm\SMS\SMSVB\obj\Debug\SMSVB.pdb
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.DeleteStudent.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.MagStuRecord.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.teacherDashboard.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.teacherHomepage.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.UpdateStudntRecord.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.addResult.resources
+D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.teacherProfile.resources
