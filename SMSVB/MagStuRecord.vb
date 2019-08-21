@@ -36,57 +36,63 @@ Public Class MagStuRecord
         Dim SDA As New MySqlDataAdapter
         Dim DBDATASET As New DataTable
         Dim bsource As New BindingSource
-        '   Dim reader As MySqlDataReader
+        Dim reader As MySqlDataReader
 
         Try
             myconn.Open()
             Dim Query As String
             Query = "select * from SMS.Studentinfor"
             command = New MySqlCommand(Query, myconn)
-            SDA.SelectCommand = command
-            SDA.Fill(DBDATASET)
-            bsource.DataSource = DBDATASET
-            Me.DataGridView1.DataSource = bsource
-            SDA.Update(DBDATASET)
-            myconn.Close()
+            reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+            ListView1.Items.Clear()
+            Dim x As ListViewItem
+            Do While reader.Read = True
+                x = New ListViewItem(reader("StudentId").ToString)
+                x.SubItems.Add(reader("FirstName"))
+                x.SubItems.Add(reader("LastName"))
+                x.SubItems.Add(reader("DOB"))
+                x.SubItems.Add(reader("Address"))
+                x.SubItems.Add(reader("Gender"))
+                x.SubItems.Add(reader("City"))
+                x.SubItems.Add(reader("District"))
+                x.SubItems.Add(reader("Class"))
+                x.SubItems.Add(reader("ParentContact"))
+                x.SubItems.Add(reader("ParentFullName"))
+                x.SubItems.Add(reader("Occupation"))
+                x.SubItems.Add(reader("MOMONumber"))
+                ListView1.Items.Add(x)
+            Loop
 
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
+        Catch ex As Exception
+            MsgBox(ex.Message)
         Finally
             myconn.Dispose()
+            myconn.Close()
 
         End Try
     End Sub
 
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-        e.Graphics.DrawImage(Bitmap, 0, 0)
+       e.Graphics.DrawImage(bitmap, 0, 0)
         Dim printview As RectangleF = e.PageSettings.PrintableArea
-        If Me.DataGridView1.Height - printview.Height > 0 Then
+        If Me.ListView1.Height - printview.Height > 0 Then
             e.HasMorePages = True
-            '      PrintDocument1.DefaultPageSettings.Landscape = True
         End If
     End Sub
     Private bitmap As Bitmap
     Private Sub InforToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InforToolStripMenuItem.Click
-        Dim height As Integer = DataGridView1.Height
-        DataGridView1.Height = DataGridView1.RowCount * DataGridView1.RowTemplate.Height
-        bitmap = New Bitmap(Me.DataGridView1.Width, Me.DataGridView1.Height)
-        DataGridView1.DrawToBitmap(bitmap, New Rectangle(0, 0, Me.DataGridView1.Width, Me.DataGridView1.Height))
+        Dim height As Integer = ListView1.Height
+        '    ListView1.Height = ListView1.Items
+        bitmap = New Bitmap(Me.ListView1.Width, Me.ListView1.Height)
+        ListView1.DrawToBitmap(bitmap, New Rectangle(0, 0, Me.ListView1.Width, Me.ListView1.Height))
         PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
         PrintPreviewDialog1.ShowDialog()
-        DataGridView1.Height = Height
+        ListView1.Height = height
 
 
         PrintDocument1.Print()
-        '   sender As Object, e As EventArgs
 
-        '   Private Sub btnPrevieworPrint_Click() Handles btnPrevieworPrint.Click()
 
-        '   PageSetupDialog1.PageSettings = PrintDocument1.PrinterSettings.DefaultPageSettings
-        '  If PageSetupDialog1.ShowDialog() = DialogResult.OK Then
-        '  PrintPreview()
-
-        'End If
 
 
     End Sub
@@ -104,24 +110,36 @@ Public Class MagStuRecord
         Command.Parameters.Add("@studentname", MySqlDbType.Int64).Value = StudentName
         Dim reader As MySqlDataReader
 
-        Dim SDA As New MySqlDataAdapter
-        Dim DBDATASET As New DataTable
-        Dim bsource As New BindingSource
-
         Try
             myconn.Open()
+            Dim Query As String
+            Query = "select * from SMS.Studentinfor"
+            Command = New MySqlCommand(Query, myconn)
+            reader = Command.ExecuteReader(CommandBehavior.CloseConnection)
+            ListView1.Items.Clear()
+            Dim x As ListViewItem
+            Do While reader.Read = True
+                x = New ListViewItem(reader("StudentId").ToString)
+                x.SubItems.Add(reader("FirstName"))
+                x.SubItems.Add(reader("LastName"))
+                x.SubItems.Add(reader("DOB"))
+                x.SubItems.Add(reader("Address"))
+                x.SubItems.Add(reader("Gender"))
+                x.SubItems.Add(reader("City"))
+                x.SubItems.Add(reader("District"))
+                x.SubItems.Add(reader("Class"))
+                x.SubItems.Add(reader("ParentContact"))
+                x.SubItems.Add(reader("ParentFullName"))
+                x.SubItems.Add(reader("Occupation"))
+                x.SubItems.Add(reader("MOMONumber"))
+                ListView1.Items.Add(x)
+            Loop
 
-            SDA.SelectCommand = Command
-            SDA.Fill(DBDATASET)
-            bsource.DataSource = DBDATASET
-            Me.DataGridView1.DataSource = bsource
-            SDA.Update(DBDATASET)
-            myconn.Close()
-
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
+        Catch ex As Exception
+            MsgBox(ex.Message)
         Finally
             myconn.Dispose()
+            myconn.Close()
 
         End Try
     End Sub
