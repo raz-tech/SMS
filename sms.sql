@@ -2,10 +2,17 @@
 -- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
+<<<<<<< HEAD
+-- Host: 127.0.0.1:3306
+-- Generation Time: Aug 21, 2019 at 10:06 PM
+-- Server version: 5.7.23
+-- PHP Version: 7.2.10
+=======
 -- Host: 127.0.0.1
 -- Generation Time: Aug 21, 2019 at 11:36 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
+>>>>>>> f957821ee0de440b21eb646e1589f0b3a9b5a316
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -83,7 +90,13 @@ INSERT INTO `staffinfor` (`StaffId`, `FullName`, `Gender`, `TelNumber`, `Region`
 -- Table structure for table `studentinfor`
 --
 
+<<<<<<< HEAD
+DROP TABLE IF EXISTS `studentinfor`;
+CREATE TABLE IF NOT EXISTS `studentinfor` (
+  `StudentId` varchar(150) NOT NULL,
+=======
 CREATE TABLE `studentinfor` (
+>>>>>>> f957821ee0de440b21eb646e1589f0b3a9b5a316
   `FirstName` varchar(100) NOT NULL,
   `Lastname` varchar(100) NOT NULL,
   `DOB` varchar(100) NOT NULL,
@@ -95,16 +108,16 @@ CREATE TABLE `studentinfor` (
   `ParentContact` varchar(200) DEFAULT NULL,
   `ParentFullName` varchar(100) DEFAULT NULL,
   `Occupation` varchar(150) DEFAULT NULL,
-  `MOMONumber` varchar(16) DEFAULT NULL
+  `MOMONumber` varchar(16) DEFAULT NULL,
+  PRIMARY KEY (`StudentId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `studentinfor`
 --
 
-INSERT INTO `studentinfor` (`FirstName`, `Lastname`, `DOB`, `Address`, `Gender`, `City`, `District`, `Class`, `ParentContact`, `ParentFullName`, `Occupation`, `MOMONumber`) VALUES
-('Zak', 'Kamal', '8/13/2019', '', 'FEMALE', 'Tamale', 'Tamale Sourth', 'Three', '054930932', 'Zakaria Kamal', '', ''),
-('Fataw', 'jalil', '8/13/2019', 'lah 44', 'male', 'tam', 'gum', 'TWO', '0549041452', 'jalil fat', 'teacher', '0549041452');
+INSERT INTO `studentinfor` (`StudentId`, `FirstName`, `Lastname`, `DOB`, `Address`, `Gender`, `City`, `District`, `Class`, `ParentContact`, `ParentFullName`, `Occupation`, `MOMONumber`) VALUES
+('1631', 'zak', 'kalil', '8/16/2019', 'kak 489', 'Female', 'Tamale', 'Tamale South', 'THREE', '0549041452', 'zak fadil', 'Teacher', '0549029333');
 
 -- --------------------------------------------------------
 
