@@ -59,3 +59,8 @@ D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.teacherHomepage.resources
 D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.UpdateStudntRecord.resources
 D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.addResult.resources
 D:\works\vb\SMS\SMSVB\obj\Debug\SMSVB.teacherProfile.resources
+D:\works\vb\SMS\SMSVB\bin\Debug\System.Web.Http.dll
+D:\works\vb\SMS\SMSVB\bin\Debug\System.Net.Http.Formatting.dll
+D:\works\vb\SMS\SMSVB\bin\Debug\Newtonsoft.Json.dll
+D:\works\vb\SMS\SMSVB\bin\Debug\System.Web.Http.xml
+D:\works\vb\SMS\SMSVB\bin\Debug\System.Net.Http.Formatting.xml

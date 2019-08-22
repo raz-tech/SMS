@@ -6,7 +6,7 @@ Public Class DeleteStudent
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         myconn = New MySqlConnection
 
-        myconn.ConnectionString = "server=localhost; userid=root; password=; database=tf_database"
+        myconn.ConnectionString = "server=localhost; userid=root; password=; database=sms"
         Dim reader As MySqlDataReader
         Try
             myconn.Open()
