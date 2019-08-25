@@ -4,25 +4,32 @@ Public Class DeleteStudent
     Dim command As MySqlCommand
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        myconn = New MySqlConnection
+        '  MessageBox.Show("Are you sure that you want to delete the student?)
+        If MsgBox("Are you sure to DELETE?", MsgBoxStyle.Critical + MsgBoxStyle.YesNo, "WARNING") = MsgBoxResult.Yes Then
+            MsgBox("YES Clicked.")
 
-        myconn.ConnectionString = "server=localhost; userid=root; password=; database=sms"
-        Dim reader As MySqlDataReader
-        Try
-            myconn.Open()
-            Dim Query As String
-            Query =
+            myconn = New MySqlConnection
+
+            myconn.ConnectionString = "server=localhost; userid=root; password=; database=sms"
+            Dim reader As MySqlDataReader
+            Try
+                myconn.Open()
+                Dim Query As String
+                Query =
 "delete from  SMS.Studentinfor where StudentId='" & TextBox1.Text & "'"
-            Command = New MySqlCommand(Query, myconn)
-            reader = Command.ExecuteReader
-            MessageBox.Show(" STUDENT DATA DELETED SUCCESSFULLY")
+                command = New MySqlCommand(Query, myconn)
+                reader = command.ExecuteReader
+                MessageBox.Show(" STUDENT DATA DELETED SUCCESSFULLY")
 
-            myconn.Close()
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
-        Finally
-            myconn.Dispose()
-        End Try
+                myconn.Close()
+            Catch ex As MySqlException
+                MessageBox.Show(ex.Message)
+            Finally
+                myconn.Dispose()
+            End Try
+        Else
+            MsgBox("NO Clicked.")
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -37,26 +44,6 @@ Public Class DeleteStudent
         Dim DBDATASET As New DataTable
         Dim bsource As New BindingSource
         Dim reader As MySqlDataReader
-        '   #If   then  
-        '  Try
-        'myconn.Open()
-        '   Dim Query As String
-        '  Query = "select * from SMS.Studentinfor"
-        '  command = New MySqlCommand(Query, myconn)
-        '  SDA.SelectCommand = command
-        '  SDA.Fill(DBDATASET)
-        '  bsource.DataSource = DBDATASET
-        '  Me.ListView1.DataSource = bsource
-        '  SDA.Update(DBDATASET)
-        'myconn.Close()
-
-        '   Catch ex As MySqlException
-        '   MessageBox.Show(ex.Message)
-        '   Finally
-        '     myconn.Dispose()
-        '
-        '    End Try
-
 
         Try
             myconn.Open()
@@ -111,5 +98,10 @@ Public Class DeleteStudent
         If Me.ListView1.Height - printview.Height > 0 Then
             e.HasMorePages = True
         End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        login.Show()
+        Me.Hide()
     End Sub
 End Class

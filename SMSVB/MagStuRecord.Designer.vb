@@ -24,20 +24,6 @@ Partial Class MagStuRecord
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MagStuRecord))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.UpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InforToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.menuUpdate = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CreateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -52,6 +38,20 @@ Partial Class MagStuRecord
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.UpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InforToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuUpdate = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -65,6 +65,81 @@ Partial Class MagStuRecord
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1444, 783)
         Me.Panel1.TabIndex = 0
+        '
+        'ListView1
+        '
+        Me.ListView1.Activation = System.Windows.Forms.ItemActivation.OneClick
+        Me.ListView1.AllowColumnReorder = True
+        Me.ListView1.AllowDrop = True
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13})
+        Me.ListView1.FullRowSelect = True
+        Me.ListView1.GridLines = True
+        Me.ListView1.HideSelection = False
+        Me.ListView1.HotTracking = True
+        Me.ListView1.HoverSelection = True
+        Me.ListView1.LabelEdit = True
+        Me.ListView1.Location = New System.Drawing.Point(-9, 27)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1214, 552)
+        Me.ListView1.TabIndex = 7
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "StudentId"
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "FirstName"
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "LastName"
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "DOB"
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Address"
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Gender"
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "City"
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "District"
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "Class"
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "ParentContact"
+        Me.ColumnHeader10.Width = 79
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "ParentFullName"
+        Me.ColumnHeader11.Width = 76
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Occupation"
+        Me.ColumnHeader12.Width = 76
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "MOMONumber"
+        Me.ColumnHeader13.Width = 89
         '
         'MenuStrip1
         '
@@ -149,79 +224,6 @@ Partial Class MagStuRecord
         Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
-        '
-        'ListView1
-        '
-        Me.ListView1.Activation = System.Windows.Forms.ItemActivation.OneClick
-        Me.ListView1.AllowColumnReorder = True
-        Me.ListView1.AllowDrop = True
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13})
-        Me.ListView1.FullRowSelect = True
-        Me.ListView1.GridLines = True
-        Me.ListView1.HotTracking = True
-        Me.ListView1.HoverSelection = True
-        Me.ListView1.LabelEdit = True
-        Me.ListView1.Location = New System.Drawing.Point(-9, 27)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1214, 552)
-        Me.ListView1.TabIndex = 7
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "StudentId"
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "FirstName"
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "LastName"
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "DOB"
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Address"
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Gender"
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "City"
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Text = "District"
-        '
-        'ColumnHeader9
-        '
-        Me.ColumnHeader9.Text = "Class"
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "ParentContact"
-        Me.ColumnHeader10.Width = 79
-        '
-        'ColumnHeader11
-        '
-        Me.ColumnHeader11.Text = "ParentFullName"
-        Me.ColumnHeader11.Width = 76
-        '
-        'ColumnHeader12
-        '
-        Me.ColumnHeader12.Text = "Occupation"
-        '
-        'ColumnHeader13
-        '
-        Me.ColumnHeader13.Text = "MOMONumber"
-        Me.ColumnHeader13.Width = 89
         '
         'MagStuRecord
         '

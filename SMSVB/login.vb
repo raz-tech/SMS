@@ -10,8 +10,11 @@ Public Class login
 
 
 
+<<<<<<< HEAD
 
    
+=======
+>>>>>>> 8a373e8bd1ebe340e1a7ecdc2c79550b98156bdb
 
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
@@ -68,4 +71,9 @@ Public Class login
 
     End Sub
 
+    Private Sub BtnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        '  Dim hobby As String = InputBox("Please Enter your hobby During the registration in order to reset password:")
+        ChangePassword.Show()
+        Me.Hide()
+    End Sub
 End Class
