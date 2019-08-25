@@ -3,6 +3,8 @@
 
 
 Public Class login
+
+
     Dim mysqlconn As MySqlConnection
     Dim command As MySqlCommand
     Dim hash = New hashFunction()
@@ -10,11 +12,6 @@ Public Class login
 
 
 
-<<<<<<< HEAD
-
-   
-=======
->>>>>>> 8a373e8bd1ebe340e1a7ecdc2c79550b98156bdb
 
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
@@ -76,4 +73,5 @@ Public Class login
         ChangePassword.Show()
         Me.Hide()
     End Sub
-End Class
+
+end class
