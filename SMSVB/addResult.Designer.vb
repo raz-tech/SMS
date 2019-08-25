@@ -23,21 +23,23 @@ Partial Class addResult
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.firstName = New System.Windows.Forms.TextBox()
-        Me.lastName = New System.Windows.Forms.TextBox()
-        Me.academicYear = New System.Windows.Forms.ComboBox()
-        Me.term = New System.Windows.Forms.ComboBox()
-        Me.midTerm = New System.Windows.Forms.TextBox()
-        Me.endTerm = New System.Windows.Forms.TextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.endTerm = New System.Windows.Forms.TextBox()
+        Me.midTerm = New System.Windows.Forms.TextBox()
+        Me.term = New System.Windows.Forms.ComboBox()
+        Me.academicYear = New System.Windows.Forms.ComboBox()
+        Me.lastName = New System.Windows.Forms.TextBox()
+        Me.firstName = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -51,9 +53,21 @@ Partial Class addResult
         Me.Panel1.Size = New System.Drawing.Size(466, 52)
         Me.Panel1.TabIndex = 0
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(73, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(285, 31)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ADD EXAM RESULT"
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel2.Controls.Add(Me.Button3)
+        Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.endTerm)
         Me.Panel2.Controls.Add(Me.midTerm)
@@ -72,65 +86,61 @@ Partial Class addResult
         Me.Panel2.Size = New System.Drawing.Size(466, 323)
         Me.Panel2.TabIndex = 0
         '
-        'Label1
+        'Button1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(73, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(285, 31)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ADD EXAM RESULT"
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(160, 297)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(121, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Submit Data"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label2
+        'endTerm
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 28)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 16)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "First Name:"
+        Me.endTerm.Location = New System.Drawing.Point(186, 261)
+        Me.endTerm.Name = "endTerm"
+        Me.endTerm.Size = New System.Drawing.Size(270, 20)
+        Me.endTerm.TabIndex = 3
         '
-        'Label3
+        'midTerm
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 76)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 16)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Last Name:"
+        Me.midTerm.Location = New System.Drawing.Point(186, 218)
+        Me.midTerm.Name = "midTerm"
+        Me.midTerm.Size = New System.Drawing.Size(270, 20)
+        Me.midTerm.TabIndex = 3
         '
-        'Label4
+        'term
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 131)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(118, 16)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Academic Year:"
+        Me.term.FormattingEnabled = True
+        Me.term.Items.AddRange(New Object() {"ONE ", "TWO", "THREE"})
+        Me.term.Location = New System.Drawing.Point(186, 171)
+        Me.term.Name = "term"
+        Me.term.Size = New System.Drawing.Size(270, 21)
+        Me.term.TabIndex = 2
         '
-        'Label5
+        'academicYear
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 176)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 16)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Term:"
+        Me.academicYear.FormattingEnabled = True
+        Me.academicYear.Items.AddRange(New Object() {"2012/13"})
+        Me.academicYear.Location = New System.Drawing.Point(186, 126)
+        Me.academicYear.Name = "academicYear"
+        Me.academicYear.Size = New System.Drawing.Size(270, 21)
+        Me.academicYear.TabIndex = 2
         '
-        'Label6
+        'lastName
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 219)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(73, 16)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "MidTerm:"
+        Me.lastName.Location = New System.Drawing.Point(186, 76)
+        Me.lastName.Name = "lastName"
+        Me.lastName.Size = New System.Drawing.Size(270, 20)
+        Me.lastName.TabIndex = 1
+        '
+        'firstName
+        '
+        Me.firstName.Location = New System.Drawing.Point(186, 27)
+        Me.firstName.Name = "firstName"
+        Me.firstName.Size = New System.Drawing.Size(270, 20)
+        Me.firstName.TabIndex = 1
         '
         'Label7
         '
@@ -142,61 +152,75 @@ Partial Class addResult
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "EndTerm:"
         '
-        'firstName
+        'Label6
         '
-        Me.firstName.Location = New System.Drawing.Point(186, 27)
-        Me.firstName.Name = "firstName"
-        Me.firstName.Size = New System.Drawing.Size(270, 20)
-        Me.firstName.TabIndex = 1
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(12, 219)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(73, 16)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "MidTerm:"
         '
-        'lastName
+        'Label5
         '
-        Me.lastName.Location = New System.Drawing.Point(186, 76)
-        Me.lastName.Name = "lastName"
-        Me.lastName.Size = New System.Drawing.Size(270, 20)
-        Me.lastName.TabIndex = 1
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(12, 176)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(48, 16)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Term:"
         '
-        'academicYear
+        'Label4
         '
-        Me.academicYear.FormattingEnabled = True
-        Me.academicYear.Items.AddRange(New Object() {"2012/13"})
-        Me.academicYear.Location = New System.Drawing.Point(186, 126)
-        Me.academicYear.Name = "academicYear"
-        Me.academicYear.Size = New System.Drawing.Size(270, 21)
-        Me.academicYear.TabIndex = 2
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 131)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(118, 16)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Academic Year:"
         '
-        'term
+        'Label3
         '
-        Me.term.FormattingEnabled = True
-        Me.term.Items.AddRange(New Object() {"ONE ", "TWO", "THREE"})
-        Me.term.Location = New System.Drawing.Point(186, 171)
-        Me.term.Name = "term"
-        Me.term.Size = New System.Drawing.Size(270, 21)
-        Me.term.TabIndex = 2
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(12, 76)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(86, 16)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Last Name:"
         '
-        'midTerm
+        'Label2
         '
-        Me.midTerm.Location = New System.Drawing.Point(186, 218)
-        Me.midTerm.Name = "midTerm"
-        Me.midTerm.Size = New System.Drawing.Size(270, 20)
-        Me.midTerm.TabIndex = 3
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 28)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(87, 16)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "First Name:"
         '
-        'endTerm
+        'Button2
         '
-        Me.endTerm.Location = New System.Drawing.Point(186, 261)
-        Me.endTerm.Name = "endTerm"
-        Me.endTerm.Size = New System.Drawing.Size(270, 20)
-        Me.endTerm.TabIndex = 3
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(33, 297)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(121, 23)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Previous page"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Button3
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(160, 297)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Submit Data"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(287, 297)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(121, 23)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "Logout"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'addResult
         '
@@ -230,4 +254,6 @@ Partial Class addResult
     Friend WithEvents lastName As System.Windows.Forms.TextBox
     Friend WithEvents firstName As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
 End Class

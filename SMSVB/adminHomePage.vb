@@ -32,4 +32,22 @@
     Private Sub adminHomePage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ChangePassword.Show()
+        Me.Hide()
+        Dim inputBox As String = ("Enter the user type:")
+        Dim usertype = inputBox("UserType")
+        If usertype = "teacher" Then
+            Me.Hide()
+            ChangePassword.Show()
+
+        ElseIf usertype = "admin" Then
+
+            Me.Hide()
+            ChangePassword.Show()
+        Else
+            MessageBox.Show("Invalid request")
+        End If
+    End Sub
 End Class

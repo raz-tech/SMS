@@ -48,4 +48,10 @@ Public Class addStudentRecord
     Private Sub TextBox10_TextChanged(sender As Object, e As EventArgs) Handles TextBox10.TextChanged
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        login.Show()
+
+    End Sub
 End Class

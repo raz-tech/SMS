@@ -25,6 +25,8 @@ Partial Class addStudentRecord
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -51,8 +53,7 @@ Partial Class addStudentRecord
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -82,6 +83,7 @@ Partial Class addStudentRecord
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel2.Controls.Add(Me.Button3)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.TextBox10)
         Me.Panel2.Controls.Add(Me.Button2)
@@ -116,6 +118,24 @@ Partial Class addStudentRecord
         Me.Panel2.Size = New System.Drawing.Size(457, 582)
         Me.Panel2.TabIndex = 0
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(-2, 12)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(114, 20)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "STUDENT ID "
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(222, 11)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(216, 22)
+        Me.TextBox10.TabIndex = 18
+        '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -123,7 +143,7 @@ Partial Class addStudentRecord
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(135, 53)
         Me.Button2.TabIndex = 16
-        Me.Button2.Text = "<<"
+        Me.Button2.Text = "BACK <<"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox9
@@ -251,7 +271,7 @@ Partial Class addStudentRecord
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(181, 527)
+        Me.Button1.Location = New System.Drawing.Point(122, 527)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(202, 53)
         Me.Button1.TabIndex = 1
@@ -357,23 +377,15 @@ Partial Class addStudentRecord
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "FIRST NAME"
         '
-        'TextBox10
+        'Button3
         '
-        Me.TextBox10.Location = New System.Drawing.Point(222, 11)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(216, 22)
-        Me.TextBox10.TabIndex = 18
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(-2, 12)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 20)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "STUDENT ID "
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(320, 527)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(135, 53)
+        Me.Button3.TabIndex = 19
+        Me.Button3.Text = "LOGOUT"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'addStudentRecord
         '
@@ -425,5 +437,5 @@ Partial Class addStudentRecord
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-
+    Friend WithEvents Button3 As Button
 End Class

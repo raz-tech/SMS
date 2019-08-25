@@ -9,7 +9,7 @@ Public Class login
     Dim DataAdapter As New MySqlDataAdapter
 
 
-   
+
 
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
@@ -66,4 +66,9 @@ Public Class login
 
     End Sub
 
+    Private Sub BtnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        '  Dim hobby As String = InputBox("Please Enter your hobby During the registration in order to reset password:")
+        ChangePassword.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -47,6 +47,7 @@ Partial Class Staffinfor
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -301,12 +302,22 @@ Partial Class Staffinfor
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(75, 581)
+        Me.Button2.Location = New System.Drawing.Point(117, 580)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(106, 41)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "<<"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(396, 581)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(106, 41)
+        Me.Button3.TabIndex = 5
+        Me.Button3.Text = "LOGOUT"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Staffinfor
         '
@@ -314,6 +325,7 @@ Partial Class Staffinfor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(576, 624)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
@@ -353,4 +365,5 @@ Partial Class Staffinfor
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As Button
 End Class

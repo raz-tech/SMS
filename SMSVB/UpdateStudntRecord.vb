@@ -11,8 +11,8 @@ Public Class UpdateStudntRecord
             myconn.Open()
             Dim Query As String
             Query =
-"update SMS.Studentinfor set FirstName='" & TextBox2.Text & "', LastName='" & TextBox3.Text & "',DOB='" & TextBox4.Text & "',Address='" & TextBox5.Text & "',Gender='" & TextBox6.Text & "',City='" & TextBox7.Text & "',District='" & TextBox8.Text & "',Class='" & TextBox9.Text & "',ParentContact='" & TextBox10.Text & "',ParentFullName='" & TextBox12.Text & "',Occupation='" & TextBox13.Text & "',MOMONumber='" & TextBox14.Text & "' where StudentId='" & TextBox1.Text & "'  "
-            Command = New MySqlCommand(Query, myconn)
+"update SMS.Studentinfor set FirstName='" & TextBox2.Text & "', LastName='" & TextBox3.Text & "',DOB='" & TextBox4.Text & "',Address='" & TextBox5.Text & "',Gender='" & TextBox6.Text & "',City='" & TextBox7.Text & "',District='" & TextBox8.Text & "',Class='" & TextBox9.Text & "',ParentContact='" & TextBox10.Text & "',ParentFullName='" & TextBox16.Text & "',Occupation='" & TextBox15.Text & "',MOMONumber='" & TextBox11.Text & "' where StudentId='" & TextBox1.Text & "'  "
+            command = New MySqlCommand(Query, myconn)
             reader = Command.ExecuteReader
             MessageBox.Show("DATA UPDATED")
 
@@ -60,5 +60,11 @@ Public Class UpdateStudntRecord
 
         End If
         myconn.Close()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        login.Show()
+        Me.Hide()
+
     End Sub
 End Class

@@ -31,6 +31,7 @@ Partial Class adminHomePage
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -124,11 +125,22 @@ Partial Class adminHomePage
         Me.PictureBox3.TabIndex = 13
         Me.PictureBox3.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(65, 376)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(150, 144)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "PASSWORD " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "RESET"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'adminHomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(736, 562)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -154,4 +166,5 @@ Partial Class adminHomePage
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button1 As Button
 End Class

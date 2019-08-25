@@ -32,6 +32,7 @@ Partial Class login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +62,7 @@ Partial Class login
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(258, 144)
+        Me.Label1.Location = New System.Drawing.Point(258, 103)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(182, 37)
         Me.Label1.TabIndex = 10
@@ -72,7 +73,7 @@ Partial Class login
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), System.Drawing.Image)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(249, 184)
+        Me.PictureBox1.Location = New System.Drawing.Point(249, 143)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(192, 139)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -83,7 +84,7 @@ Partial Class login
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(112, 364)
+        Me.Label2.Location = New System.Drawing.Point(112, 323)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 31)
         Me.Label2.TabIndex = 12
@@ -91,7 +92,7 @@ Partial Class login
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(265, 375)
+        Me.TextBox1.Location = New System.Drawing.Point(265, 334)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(235, 20)
         Me.TextBox1.TabIndex = 13
@@ -100,7 +101,7 @@ Partial Class login
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(112, 430)
+        Me.Label3.Location = New System.Drawing.Point(112, 389)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(151, 31)
         Me.Label3.TabIndex = 15
@@ -108,7 +109,7 @@ Partial Class login
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(265, 440)
+        Me.TextBox2.Location = New System.Drawing.Point(265, 399)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(235, 20)
@@ -117,18 +118,31 @@ Partial Class login
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(292, 506)
+        Me.Button1.Location = New System.Drawing.Point(283, 443)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(157, 23)
         Me.Button1.TabIndex = 17
         Me.Button1.Text = "LOGIN"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnReset
+        '
+        Me.btnReset.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReset.Location = New System.Drawing.Point(0, 518)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(730, 23)
+        Me.btnReset.TabIndex = 18
+        Me.btnReset.Text = "Reset Password Here"
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(730, 541)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label3)
@@ -156,4 +170,5 @@ Partial Class login
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnReset As Button
 End Class
