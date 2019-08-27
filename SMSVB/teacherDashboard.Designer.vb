@@ -34,6 +34,7 @@ Partial Class teacherDashboard
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +65,7 @@ Partial Class teacherDashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
@@ -96,7 +98,7 @@ Partial Class teacherDashboard
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(254, 12)
+        Me.Button3.Location = New System.Drawing.Point(305, 12)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(164, 34)
         Me.Button3.TabIndex = 2
@@ -106,7 +108,7 @@ Partial Class teacherDashboard
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(38, 12)
+        Me.Button2.Location = New System.Drawing.Point(116, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(168, 34)
         Me.Button2.TabIndex = 1
@@ -162,6 +164,16 @@ Partial Class teacherDashboard
         Me.DataGridView1.Size = New System.Drawing.Size(888, 415)
         Me.DataGridView1.TabIndex = 5
         '
+        'Button5
+        '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(11, 12)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(83, 34)
+        Me.Button5.TabIndex = 4
+        Me.Button5.Text = "<<<BACK"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'teacherDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -194,4 +206,5 @@ Partial Class teacherDashboard
     Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

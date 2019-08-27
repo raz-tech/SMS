@@ -24,7 +24,8 @@ Public Class UpdateStaffRecords
         Finally
             myconn.Dispose()
         End Try
-       
+        Me.Close()
+
     End Sub
 
     

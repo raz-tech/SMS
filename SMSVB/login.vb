@@ -52,7 +52,7 @@ Public Class login
                 Dim usertype = Reader("UserType")
                 If usertype = "teacher" Then
                     Me.Hide()
-                    teacherDashboard.Show()
+                    teacherHomepage.Show()
 
                 Else
                     Me.Hide()
