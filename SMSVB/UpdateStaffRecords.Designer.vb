@@ -103,6 +103,7 @@ Partial Class UpdateStaffRecords
         '
         Me.txtName.Location = New System.Drawing.Point(210, 38)
         Me.txtName.Name = "txtName"
+        Me.txtName.ReadOnly = True
         Me.txtName.Size = New System.Drawing.Size(100, 20)
         Me.txtName.TabIndex = 9
         '
@@ -110,6 +111,7 @@ Partial Class UpdateStaffRecords
         '
         Me.txtGender.Location = New System.Drawing.Point(210, 71)
         Me.txtGender.Name = "txtGender"
+        Me.txtGender.ReadOnly = True
         Me.txtGender.Size = New System.Drawing.Size(100, 20)
         Me.txtGender.TabIndex = 9
         '
@@ -138,6 +140,7 @@ Partial Class UpdateStaffRecords
         '
         Me.txtSubject.Location = New System.Drawing.Point(210, 214)
         Me.txtSubject.Name = "txtSubject"
+        Me.txtSubject.ReadOnly = True
         Me.txtSubject.Size = New System.Drawing.Size(100, 20)
         Me.txtSubject.TabIndex = 9
         '
@@ -152,6 +155,7 @@ Partial Class UpdateStaffRecords
         '
         Me.txtAdYr.Location = New System.Drawing.Point(210, 282)
         Me.txtAdYr.Name = "txtAdYr"
+        Me.txtAdYr.ReadOnly = True
         Me.txtAdYr.Size = New System.Drawing.Size(100, 20)
         Me.txtAdYr.TabIndex = 9
         '

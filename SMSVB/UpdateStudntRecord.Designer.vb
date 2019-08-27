@@ -23,6 +23,7 @@ Partial Class UpdateStudntRecord
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
@@ -56,7 +57,6 @@ Partial Class UpdateStudntRecord
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -100,6 +100,15 @@ Partial Class UpdateStudntRecord
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(731, 620)
         Me.Panel1.TabIndex = 0
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(637, 64)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(91, 42)
+        Me.Button4.TabIndex = 42
+        Me.Button4.Text = "LOGOUT"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'TextBox11
         '
@@ -393,15 +402,6 @@ Partial Class UpdateStudntRecord
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Update"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(637, 64)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 42)
-        Me.Button4.TabIndex = 42
-        Me.Button4.Text = "LOGOUT"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'UpdateStudntRecord
         '
