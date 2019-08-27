@@ -11,7 +11,7 @@ Public Class addResult
         Try
             MYCONN.Open()
             Dim Query As String
-            Dim total As Integer = Int(midTerm.Text) + Int(endTerm.Text)
+            Dim total As Integer = Val(midTerm.Text) + Val(endTerm.Text)
             Query =
 "insert into SMS.examResult (firstName,lastName,academicYear,term,midTerm,endTerm,totalMark) values ('" & firstName.Text & "','" & lastName.Text & "','" & academicYear.Text & "','" & term.Text & "','" & midTerm.Text & "','" & endTerm.Text & "','" & total & "')  "
             Command = New MySqlCommand(Query, MYCONN)
