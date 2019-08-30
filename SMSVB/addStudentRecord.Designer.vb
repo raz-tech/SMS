@@ -25,6 +25,7 @@ Partial Class addStudentRecord
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -53,7 +54,6 @@ Partial Class addStudentRecord
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -117,6 +117,16 @@ Partial Class addStudentRecord
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(457, 582)
         Me.Panel2.TabIndex = 0
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(320, 527)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(135, 53)
+        Me.Button3.TabIndex = 19
+        Me.Button3.Text = "LOGOUT"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -376,16 +386,6 @@ Partial Class addStudentRecord
         Me.Label2.Size = New System.Drawing.Size(109, 20)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "FIRST NAME"
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(320, 527)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(135, 53)
-        Me.Button3.TabIndex = 19
-        Me.Button3.Text = "LOGOUT"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'addStudentRecord
         '
