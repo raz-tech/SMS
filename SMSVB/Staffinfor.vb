@@ -8,36 +8,42 @@ Public Class Staffinfor
     Dim reader2 As MySqlDataReader
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MYCONN = New MySqlConnection
+        If TextBox1.Text = Nothing Or TextBox3.Text = Nothing Or TextBox4.Text = Nothing Or TextBox5.Text = Nothing Or TextBox6.Text = Nothing _
+            Or TextBox9.Text = Nothing Or ComboBox1.Text = Nothing Or ComboBox2.Text = Nothing Then
+            MsgBox("Please fill the missing field", MsgBoxStyle.Information, MsgBoxStyle.Critical)
+        Else
+            MYCONN = New MySqlConnection
 
-        MYCONN.ConnectionString = "server=localhost; userid=root; password=; database=SMS"
+            MYCONN.ConnectionString = "server=localhost; userid=root; password=; database=SMS"
 
 
-        Try
-            MYCONN.Open()
-            Dim Query1 As String
-           
-            Query1 =
-"insert into SMS.staffinfor (StaffId,FullName,Gender,TelNumber,Region,City,SubjectTeaching,DOB,DateAdmitted,Hobby) values ('" & TextBox1.Text & "','" & TextBox3.Text & "','" & ComboBox1.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & DateTimePicker1.Text & "','" & DateTimePicker2.Text & "','" & TextBox9.Text & "')  "
-            COMMAND1 = New MySqlCommand(Query1, MYCONN)
+            Try
+                MYCONN.Open()
+                Dim Query1 As String
 
-            reader1 = COMMAND1.ExecuteReader
+                Query1 =
+    "insert into SMS.staffinfor (StaffId,FullName,Gender,TelNumber,Region,City,SubjectTeaching,DOB,DateAdmitted,Hobby) values ('" & TextBox1.Text & "','" & TextBox3.Text & "','" & ComboBox1.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & DateTimePicker1.Text & "','" & DateTimePicker2.Text & "','" & TextBox9.Text & "')  "
+                COMMAND1 = New MySqlCommand(Query1, MYCONN)
 
-            MYCONN.Close()
+                reader1 = COMMAND1.ExecuteReader
 
-            MYCONN.Open()
-            Dim Query2 As String
-            Dim pass = hash.fromstring(1234)
-            Dim usertype = "teacher"
-            Query2 = "insert into SMS.users (UserId,UserType,Password) values ('" & TextBox1.Text & "','" & usertype & "','" & pass & "')  "
-            COMMAND2 = New MySqlCommand(Query2, MYCONN)
-            reader2 = COMMAND2.ExecuteReader
-            MessageBox.Show("Data Submited Successfully. Thank you!!!")
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
-        Finally
-            MYCONN.Dispose()
-        End Try
+                MYCONN.Close()
+
+                MYCONN.Open()
+                Dim Query2 As String
+                Dim pass = hash.fromstring(1234)
+                Dim usertype = "teacher"
+                Query2 = "insert into SMS.users (UserId,UserType,Password) values ('" & TextBox1.Text & "','" & usertype & "','" & pass & "')  "
+                COMMAND2 = New MySqlCommand(Query2, MYCONN)
+                reader2 = COMMAND2.ExecuteReader
+                MessageBox.Show("Data Submited Successfully. Thank you!!!")
+            Catch ex As MySqlException
+                MessageBox.Show(ex.Message)
+            Finally
+                MYCONN.Dispose()
+            End Try
+        End If
+       
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs)

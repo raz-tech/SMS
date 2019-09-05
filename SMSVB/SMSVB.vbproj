@@ -197,7 +197,6 @@
     <Compile Include="teacherProfile.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TextBox_Validating.vb" />
     <Compile Include="UpdateStaffRecords.Designer.vb">
       <DependentUpon>UpdateStaffRecords.vb</DependentUpon>
     </Compile>
