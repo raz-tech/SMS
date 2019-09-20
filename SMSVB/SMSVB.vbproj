@@ -146,6 +146,12 @@
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LoginPasswordChange.Designer.vb">
+      <DependentUpon>LoginPasswordChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPasswordChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MagStuRecord.Designer.vb">
       <DependentUpon>MagStuRecord.vb</DependentUpon>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPasswordChange.resx">
+      <DependentUpon>LoginPasswordChange.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MagStuRecord.resx">
       <DependentUpon>MagStuRecord.vb</DependentUpon>
