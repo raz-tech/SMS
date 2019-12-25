@@ -78,9 +78,9 @@ Partial Class MagStuRecord
         Me.ListView1.HotTracking = True
         Me.ListView1.HoverSelection = True
         Me.ListView1.LabelEdit = True
-        Me.ListView1.Location = New System.Drawing.Point(-9, 27)
+        Me.ListView1.Location = New System.Drawing.Point(3, 27)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1214, 552)
+        Me.ListView1.Size = New System.Drawing.Size(1202, 491)
         Me.ListView1.TabIndex = 7
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -196,7 +196,7 @@ Partial Class MagStuRecord
         'DatabaseToolStripMenuItem
         '
         Me.DatabaseToolStripMenuItem.Name = "DatabaseToolStripMenuItem"
-        Me.DatabaseToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.DatabaseToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DatabaseToolStripMenuItem.Text = "Database"
         '
         'HelpToolStripMenuItem1
