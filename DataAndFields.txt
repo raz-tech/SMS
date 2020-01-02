@@ -1,0 +1,37 @@
+STUDENT
+	Student details
+		studentId
+		firstName
+		lastName
+		otherName
+		dateOfBirth
+		class
+		dateOfAdmission
+		yearOfCompletion
+	father's details
+		firstName
+		lastName
+		email
+		phone
+		address
+	mother's details
+		firstName
+		lastName
+		phone
+		address
+		email
+
+TEACHER
+	teacher's details
+		teacherId
+		firstName
+		lastName
+		otherName
+		dateOfBirth
+		dateOfAdmission
+		qualification
+		address
+		subject
+		phone
+		email
+
