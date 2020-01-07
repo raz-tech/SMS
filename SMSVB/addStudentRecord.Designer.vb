@@ -37,7 +37,6 @@ Partial Class addStudentRecord
         Me.studentId = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -232,7 +231,6 @@ Partial Class addStudentRecord
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.LightCoral
-        Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
@@ -243,26 +241,13 @@ Partial Class addStudentRecord
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Profile Picture"
         '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.BorderSize = 5
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(215, 203)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(102, 26)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "UPLOAD"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.BorderSize = 5
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(119, 203)
+        Me.Button2.Location = New System.Drawing.Point(201, 203)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(90, 26)
         Me.Button2.TabIndex = 2
@@ -366,7 +351,7 @@ Partial Class addStudentRecord
         Me.GroupBox3.Size = New System.Drawing.Size(560, 260)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Mothe's Details"
+        Me.GroupBox3.Text = "Mother's Details"
         '
         'Label10
         '
@@ -623,7 +608,6 @@ Partial Class addStudentRecord
     Friend WithEvents studentId As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
