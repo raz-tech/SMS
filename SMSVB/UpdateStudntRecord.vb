@@ -2,7 +2,7 @@
 Public Class UpdateStudntRecord
     Dim myconn As MySqlConnection
     Dim command As MySqlCommand
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         myconn = New MySqlConnection
 
         myconn.ConnectionString = "server=localhost; userid=root; password=; database=tf_database"
@@ -13,7 +13,7 @@ Public Class UpdateStudntRecord
             Query =
 "update SMS.Studentinfor set FirstName='" & TextBox2.Text & "', LastName='" & TextBox3.Text & "',DOB='" & TextBox4.Text & "',Address='" & TextBox5.Text & "',Gender='" & TextBox6.Text & "',City='" & TextBox7.Text & "',District='" & TextBox8.Text & "',Class='" & TextBox9.Text & "',ParentContact='" & TextBox10.Text & "',ParentFullName='" & TextBox16.Text & "',Occupation='" & TextBox15.Text & "',MOMONumber='" & TextBox11.Text & "' where StudentId='" & TextBox1.Text & "'  "
             command = New MySqlCommand(Query, myconn)
-            reader = Command.ExecuteReader
+            reader = command.ExecuteReader
             MessageBox.Show("DATA UPDATED")
 
             myconn.Close()
@@ -24,12 +24,12 @@ Public Class UpdateStudntRecord
         End Try
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         MagStuRecord.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         myconn = New MySqlConnection
         myconn.ConnectionString = "server=localhost; userid=root;password=;DATABASE=SMS"
 
@@ -62,7 +62,7 @@ Public Class UpdateStudntRecord
         myconn.Close()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         login.Show()
         Me.Hide()
 
@@ -72,7 +72,7 @@ Public Class UpdateStudntRecord
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 End Class
